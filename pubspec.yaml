@@ -1,0 +1,101 @@
+name: one_go
+description: "Кроссплатформенное мобильное приложение для оказания разовых услуг"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.10+1
+  
+  # State Management
+  bloc: ^8.1.4
+  flutter_bloc: ^8.1.6
+  
+  # Dependency Injection
+  get_it: ^8.0.2
+  injectable: ^2.5.0
+  
+  # Navigation
+  go_router: ^14.6.1
+  
+  # HTTP & API
+  dio: ^5.7.0
+  retrofit: ^4.4.1
+  json_annotation: ^4.9.0
+  
+  # Local Storage
+  shared_preferences: ^2.3.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Authentication
+  firebase_core: ^3.8.0
+  firebase_auth: ^5.3.3
+  google_sign_in: ^6.2.2
+  
+  # Push Notifications
+  firebase_messaging: ^15.1.6
+  
+  # Image Handling
+  cached_network_image: ^3.4.1
+  image_picker: ^1.1.2
+  
+  # Utils
+  intl: ^0.19.0
+  equatable: ^2.0.7
+  
+  # UI Components
+  flutter_rating_bar: ^4.0.1
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  
+  # Code Generation
+  build_runner: ^2.4.13
+  json_serializable: ^6.8.0
+  injectable_generator: ^2.6.2
+  retrofit_generator: ^9.1.4
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
