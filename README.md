@@ -1,23 +1,145 @@
-# OneGo - Мобильное приложение для оказания разовых услуг
+# OneGo - Flutter Service Marketplace
 
-OneGo - это кроссплатформенное мобильное приложение на Flutter, которое соединяет поставщиков услуг с клиентами для выполнения разовых работ.
+A modern Flutter application for connecting service providers with customers who need various services.
 
-## Особенности
+## 📱 Features
 
-### 🔐 Аутентификация
-- Регистрация и вход в систему
-- Авторизация через Google
-- Роли пользователей (клиент/исполнитель)
+- **User Authentication** - Secure login/register for customers and service providers
+- **Service Browsing** - Search and browse services by categories
+- **Service Provider Profiles** - Detailed profiles with ratings and reviews
+- **Booking System** - Easy booking and management of services
+- **In-App Chat** - Direct communication between customers and providers
+- **Payment Integration** - Secure payment processing
+- **Push Notifications** - Real-time updates
+- **Multi-language Support** - Russian/English
 
-### 🏠 Главная страница
-- Поиск услуг
-- Категории услуг
-- Популярные услуги
-- Последние активности
+## 🏗️ Architecture
 
-### 🛠 Услуги
-- Просмотр списка услуг
-- Фильтрация по категориям
+- **Clean Architecture** - Separation of concerns with clear layers
+- **BLoC Pattern** - State management with flutter_bloc
+- **Dependency Injection** - Using GetIt and Injectable
+- **GoRouter** - Declarative routing
+- **Form Validation** - Custom validators with proper error handling
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK (>=3.0.0)
+- Dart SDK (>=3.0.0)
+- Android Studio / VS Code
+- Git
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/onego-flutter-app.git
+cd onego-flutter-app
+```
+
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3. Generate code:
+```bash
+dart run build_runner build
+```
+
+4. Run the app:
+```bash
+# Web
+flutter run -d chrome
+
+# Android
+flutter run -d emulator-5554
+
+# iOS
+flutter run -d ios
+```
+
+## 📁 Project Structure
+
+```
+lib/
+├── core/
+│   ├── di/                 # Dependency injection
+│   ├── error/              # Error handling
+│   ├── theme/              # App theme
+│   └── utils/              # Utilities and validators
+├── features/
+│   ├── auth/               # Authentication feature
+│   ├── home/               # Home screen
+│   ├── profile/            # User profile
+│   ├── services/           # Service browsing
+│   ├── booking/            # Booking system
+│   └── chat/               # In-app messaging
+├── shared/
+│   ├── models/             # Data models
+│   └── widgets/            # Reusable widgets
+└── main.dart               # App entry point
+```
+
+## �️ Tech Stack
+
+- **Flutter** - UI framework
+- **Dart** - Programming language
+- **BLoC** - State management
+- **GetIt** - Dependency injection
+- **GoRouter** - Navigation
+- **Dio** - HTTP client
+- **Hive** - Local storage
+- **Firebase** - Backend services (optional)
+- **Injectable** - Code generation for DI
+
+## 🔧 Configuration
+
+### Android
+
+- **Min SDK**: 23 (Android 6.0)
+- **Target SDK**: Latest
+- **NDK Version**: 27.0.12077973
+
+### iOS
+
+- **Min iOS Version**: 12.0
+- **Swift Version**: 5.0
+
+## 📱 Screenshots
+
+[Add screenshots of your app here]
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Authors
+
+- **OneGo Team** - *Initial work*
+
+## � Acknowledgments
+
+- Flutter team for the amazing framework
+- The open-source community for the excellent packages
+- All contributors who make this project better
+
+## 📞 Support
+
+For support, email developer@onego.com or create an issue in this repository.
+
+---
+
+**Made with ❤️ using Flutter**
 - Детальная информация об услуге
 - Рейтинги и отзывы
 
