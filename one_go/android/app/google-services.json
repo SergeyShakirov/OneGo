@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "468244126102",
+    "project_id": "onego-fc40d",
+    "storage_bucket": "onego-fc40d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468244126102:android:8fe9a2a2f16685e0a7a5b7",
+        "android_client_info": {
+          "package_name": "com.example.one_go"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU2evrjNGJTanbZ03ROL8a0fiu9tA0Wtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
