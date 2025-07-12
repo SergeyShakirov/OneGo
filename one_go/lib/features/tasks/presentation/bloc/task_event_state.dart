@@ -38,12 +38,12 @@ class LoadMyTasks extends TaskEvent {
 
 class RespondToTask extends TaskEvent {
   final String taskId;
-  final String message;
+  final String? message;
 
-  const RespondToTask(this.taskId, this.message);
+  const RespondToTask(this.taskId, {this.message});
 
   @override
-  List<Object> get props => [taskId, message];
+  List<Object?> get props => [taskId, message];
 }
 
 class RefreshTasks extends TaskEvent {}

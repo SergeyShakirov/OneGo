@@ -66,7 +66,7 @@ class TaskBloc extends Bloc<TaskEvent, TaskState> {
 
   Future<void> _onRespondToTask(RespondToTask event, Emitter<TaskState> emit) async {
     try {
-      await _taskRepository.respondToTask(event.taskId, event.message);
+      await _taskRepository.respondToTask(event.taskId, event.message ?? '');
       emit(const TaskOperationSuccess('Отклик отправлен успешно!'));
       
       // Reload tasks after response
